@@ -214,9 +214,10 @@ if(curl) {
 
     const char *text_start, *text_stop;
     char *new;
-    text_start= "https://3sxbs74v30.execute-api.us-west-2.amazonaws.com/PROD?action=start&channelId=";
-    text_stop=  "https://3sxbs74v30.execute-api.us-west-2.amazonaws.com/PROD?action=stop&channelId=";
-
+    
+    //text_start= "https:/<apigateway-endpoint>PROD?action=start&channelId=";
+    //text_stop=  "apigateway-endpoint/PROD?action=stop&channelId=";
+    
 if(action==0){
     fprintf(stderr, "Starting Medialive\n");
 
