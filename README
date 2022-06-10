@@ -1,1 +1,8 @@
 
+Get docker container (based on https://github.com/leandromoreira/ffmpeg-libav-tutorial) with addition of CURL library
+
+docker pull casalazarh/media-live-rtmp-proxy 
+
+docker run  --rm -it  -p 1935:1935/tcp  365168541851.dkr.ecr.us-west-2.amazonaws.com/media-live-rtmp-proxy  /home/rtmp rtmp://0.0.0.0:1935/live/app  rtmp://MEDIA_LIVE_INPUT_IP:1935/app/ch01 TIMEOUT CHANNEL_ID
+
+start streaming using OBS
